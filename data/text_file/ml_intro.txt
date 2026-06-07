@@ -1,0 +1,23 @@
+Introduction to Machine Learning
+
+Machine Learning (ML) is a branch of Artificial Intelligence (AI) that enables computers to learn patterns from data and make predictions or decisions without being explicitly programmed for every task. Instead of following fixed rules, machine learning systems improve their performance by analyzing examples and identifying relationships within data.
+
+Machine learning is widely used in applications such as recommendation systems, spam filtering, image recognition, speech processing, fraud detection, healthcare diagnostics, and autonomous vehicles.
+
+There are three main types of machine learning:
+
+1. Supervised Learning
+   - Learns from labeled data.
+   - Examples: classification and regression tasks.
+
+2. Unsupervised Learning
+   - Finds hidden patterns in unlabeled data.
+   - Examples: clustering and dimensionality reduction.
+
+3. Reinforcement Learning
+   - Learns through interaction with an environment using rewards and penalties.
+   - Examples: robotics and game-playing systems.
+
+A typical machine learning workflow includes data collection, data preprocessing, model training, evaluation, and deployment. The quality of data plays a critical role in determining the effectiveness of a machine learning model.
+
+As data availability and computing power continue to grow, machine learning has become one of the most important technologies driving innovation across industries.
