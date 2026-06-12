@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #070312;
+  --color-foreground: #f3f4f6;
+  
+  /* Semantic Design Tokens */
+  --color-card-bg: rgba(13, 8, 25, 0.7);
+  --color-text-primary: #ffffff;
+  --color-text-muted: #9ca3af;
+  --color-accent-dark: #070312;
+  --color-border-card: rgba(139, 92, 246, 0.15);
+  --color-border-glow: rgba(139, 92, 246, 0.4);
+  
+  /* Legacy alias mappings for components */
+  --color-cream: var(--color-card-bg);
+  --color-charcoal: var(--color-text-primary);
+  --color-off-white: var(--color-accent-dark);
+  --color-muted: var(--color-text-muted);
+  --color-border-subtle: var(--color-border-card);
+  --color-border-interactive: var(--color-border-glow);
+  
+  --font-sans: ui-sans-serif, system-ui, sans-serif;
+  
+  --radius-micro: 4px;
+  --radius-standard: 6px;
+  --radius-comfortable: 8px;
+  --radius-card: 12px;
+  --radius-container: 16px;
+  --radius-pill: 9999px;
+
+  --shadow-button-inset: rgba(255, 255, 255, 0.1) 0px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.8) 0px 0px 0px 0.5px inset, rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
+  --shadow-focus-soft: rgba(139, 92, 246, 0.2) 0px 0px 12px 4px;
+}
+
+body {
+  background-color: var(--color-background);
+  background-image: url('/retro-background-grainy.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.grain-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  opacity: 0.035;
+  pointer-events: none;
+  z-index: 9999;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: var(--color-charcoal);
+}
