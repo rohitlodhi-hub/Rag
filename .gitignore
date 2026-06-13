@@ -11,3 +11,21 @@ wheels/
 .env
 data/vector_store/
 
+# Python
+.venv/
+.venv-1/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# Environment
+.env
+
+# ChromaDB
+data/vector_store/
+
+# Build files
+dist/
+build/
